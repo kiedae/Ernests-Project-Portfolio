@@ -55,6 +55,17 @@ header {
     color: #333333;
 }
 
+.hero {
+    background-color: #003152;
+    background-image: url(background1.avif);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 .aboutbox {
     display: flex;
     flex-direction: column;
@@ -76,4 +87,31 @@ header {
     margin: 10px 5px;
     /* easier to do media queries later on */
     flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 1440px) {
+    header {
+        width: 100%;
+    }
+    
+    
+    .headcontainer {
+        width: 100%;
+    }
+
+    .aboutbox {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        margin-left: 360px;
+    }
+
+
+
+    .headshot {
+        width: 400px;
+        height: 400px;
+    }
 }
