@@ -1,0 +1,25 @@
+/* Defines Universal Font Family */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Changes to header background color and text color */
+header {
+    background-color: #333333;
+    color: #00CED1;
+    
+}
+/* Used in conjunction with nav ul float right to align nav bar and the h1 text on same line */
+header h1 {
+    float: left;
+ 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    
+}
+
