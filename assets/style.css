@@ -11,6 +11,16 @@
     --turtclr: #00CED1;
 }
 
+/* creates a left boarder throughout the div bord */
+.bord {
+    border-left: 10px solid #0D52BD;
+    padding-left: 10px;
+    margin: 10px;
+    box-shadow: 5px 0px 5px 0px #003152;
+    
+}
+
+
 /* Changes to header background color and text color */
 header {
     background-color: #333333;
@@ -48,6 +58,11 @@ nav a:hover {
     color: #333333;
 }
 
+.aboutbox {
+    display: flex;
+    flex-direction: column;
+}
+
 .headshot {
     height: 400px;
     width: 400px;
@@ -61,4 +76,6 @@ nav a:hover {
 .abouttext {
     display: flex;
     margin: 10px 5px;
+    /* easier to do media queries later on */
+    flex-wrap: wrap;
 }
