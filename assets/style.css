@@ -1,25 +1,64 @@
 /* Defines Universal Font Family */
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* prevents horizontal scrolling */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --turtclr: #00CED1;
 }
 
 /* Changes to header background color and text color */
 header {
     background-color: #333333;
-    color: #00CED1;
+    color: var(--turtclr);
     
 }
-/* Used in conjunction with nav ul float right to align nav bar and the h1 text on same line */
-header h1 {
-    float: left;
- 
+
+.headcontainer {
+    /* makes the div within the head's children display flex */
+    display: flex;
+    justify-content: space-between;
+    /* makes all children align evenly in the center of cross axis */
+    align-items: center;
+    padding: 10px 5px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    float: right;
+     display: flex; 
+     
+    }
+
+    nav a {
+    text-decoration: none;
+    color: var(--turtclr);
+    font-size: 20px;
+    /* sets padding of the individual list items */
+    padding: 5px;
     
+    }
+
+/* changes the list items background when hover */
+nav a:hover {
+    background-color: #FAF9F6;
+    color: #333333;
 }
 
+.headshot {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.abouttext {
+    display: flex;
+    margin: 10px 5px;
+}
