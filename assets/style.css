@@ -14,10 +14,7 @@
 /* creates a left boarder throughout the div bord */
 .bord {
     border-left: 10px solid #0D52BD;
-    padding-left: 10px;
     margin: 10px;
-    box-shadow: 5px 0px 5px 0px #003152;
-    
 }
 
 
@@ -37,13 +34,13 @@ header {
     padding: 10px 5px;
 }
 
-nav ul {
+.headnav ul {
     list-style: none;
      display: flex; 
      
     }
 
-    nav a {
+    .headnav a {
     text-decoration: none;
     color: var(--turtclr);
     font-size: 20px;
@@ -53,7 +50,7 @@ nav ul {
     }
 
 /* changes the list items background when hover */
-nav a:hover {
+.headnav a:hover {
     background-color: #FAF9F6;
     color: #333333;
 }
@@ -61,6 +58,7 @@ nav a:hover {
 .aboutbox {
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 0px 5px 0px #003152;
 }
 
 .headshot {
