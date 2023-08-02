@@ -19,7 +19,7 @@
 
 
 /* Changes to header background color and text color */
-header {
+.top {
     background-color: #333333;
     color: var(--turtclr);
     
@@ -97,6 +97,12 @@ header {
     height: 450px;
 }
 
+.Workdisc {
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
 .workcontainer {
     display: flex;
     flex-direction: row;
@@ -104,14 +110,18 @@ header {
 }
 
 .project {
-    display: flex;
-    display: flex;
+    /* display: flex; */
+/*     
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     /* moves the top row of boxes away from text */
-    padding-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-top: 10px; 
+    display: inline-block;
+    margin: 10px;
+    
+    
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 
 .project a {
@@ -134,15 +144,33 @@ header {
 }
 
 .project button:hover {
+    /* makes button bigger on hover */
+    transform:scale(1.1);
+    margin-left: 20px;
+    margin-right: 2 0px;
+    box-shadow: 10px 0px 10px 0px #003152;
+    
+}
+
+/* .project button:hover {
     display: flex;
     transform: scale(1.1);
+   
+}
+     */
+
+.projabout {
+    margin-top: 10px;
+    padding-top: 10px;
     text-align: center;
 }
-    
 
 
 
-footer {
+
+
+
+     footer {
     background-color: #333333;
 }
 
