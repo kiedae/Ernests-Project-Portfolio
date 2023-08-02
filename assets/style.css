@@ -55,6 +55,7 @@ header {
     color: #333333;
 }
 
+/* hero class to add a background img above the about section */
 .hero {
     background-color: #003152;
     background-image: url(background1.avif);
@@ -70,6 +71,9 @@ header {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 0px 5px 0px #003152;
+    background-color: #333333;
+    color: #00CED1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .headshot {
@@ -87,6 +91,83 @@ header {
     margin: 10px 5px;
     /* easier to do media queries later on */
     flex-wrap: wrap;
+}
+
+.extraspace {
+    height: 450px;
+}
+
+.workcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* moves the top row of boxes away from text */
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+.project button {
+    background-image: url(./triangles-1430105_640.webp);
+    /* sets diameters of the button boxes */
+    width: 380px;
+    height: 110px;
+    color: #333333;
+    font-size: 16px;
+    
+}
+
+.project button:hover {
+    display: flex;
+    transform: scale(1.1);
+    text-align: center;
+}
+    
+
+
+
+footer {
+    background-color: #333333;
+}
+
+.footbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.footbox ul {
+    list-style: none;
+    display: flex;
+}
+
+.footbox a {
+    text-decoration: none;
+    color: #00CED1;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.footbox a:hover {
+    background-color: #FAF9F6;
+    color: #333333;
 }
 
 
@@ -108,10 +189,9 @@ header {
         margin-left: 360px;
     }
 
-
-
     .headshot {
+        display: block;
         width: 400px;
-        height: 400px;
+        top: 0%;
     }
 }
