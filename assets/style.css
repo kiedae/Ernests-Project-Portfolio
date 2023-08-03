@@ -131,7 +131,7 @@ html{
 }
 
 #project1 button {
-    background-image: url(./background1.avif);
+    background-image: url(./01-html-css-git-homework-demo.png);
 }
 
 
@@ -224,21 +224,210 @@ html{
 }
 
 /* resizes content to be responsive to 1440 */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 2560px) {
+    .bord {
+        border-left: 60px solid #0D52BD;
+        margin: 10px;
+    }
+    
+    .hero {
+        background-color: #003152;
+        background-image: url(background1.avif);
+        height: 1000px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    .headcontainer {
+        /* makes the div within the head's children display flex */
+        display: flex;
+        justify-content: space-between;
+        /* makes all children align evenly in the center of cross axis */
+        align-items: center;
+        padding: 100px 30px;
+    }
+
+    .headcontainer h1 {
+        font-size: 80px;
+    }
+    
+    .headnav ul {
+        list-style: none;
+         display: flex; 
+         
+        }
+    
+        .headnav a {
+        text-decoration: none;
+        color: var(--turtclr);
+        font-size: 80px;
+        /* sets padding of the individual list items */
+        padding: 20px;
+        
+        }
+
+        .aboutbox {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px 0px 5px 0px #003152;
+            background-color: #333333;
+            color: #00CED1;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 400px;
+            margin-right: 400px;
+            height: 800px;
+            font-size: 35px;
+        }
+        
+        .headshot {
+            height: 500px;
+            
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 50%;
+            margin-top: 10px;
+        }
+        
+        .abouttext {
+            display: flex;
+            margin: 10px 5px;
+            /* easier to do media queries later on */
+            flex-wrap: wrap;
+            
+        }
+
+        .Workdisc {
+            font-size: 40px;
+        }
+
+            .project {
+                /* moves the top row of boxes away from text */
+                padding-top: 10px; 
+                display: inline-block;
+                /* margin: 10px; */
+                margin-right: 20px;
+                margin-left: 40px;
+                
+                /* margin-right: auto;
+                margin-left: auto; */
+            }
+            
+            .project button {
+                background-image: url(./triangles-1430105_640.webp);
+                display: inline-block;
+                /* sets diameters of the button boxes */
+                height: 350px;
+                width: 1140px;
+                color: #333333;
+                font-size: 86px;
+                background-size: cover;
+                
+            }
+
+            #project1 button {
+                background-image: url(./01-html-css-git-homework-demo.png);
+            }
+            
+             .project a {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                text-align: center;
+                
+            }
+            
+            .project button:hover {
+                /* makes button bigger on hover */
+                transform:scale(1.1);
+                margin-left: 20px;
+                margin-right: 2 0px;
+                box-shadow: 10px 0px 10px 0px #003152;
+                
+            }
+
+            .projabout {
+                font-size: 40px;
+            }
+            
+            .footbox {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 40px 20px;     
+            }
+            /* Linkedin Looked weird in the middle with scaling used this to reorder email and linkedin */
+            .footbox :nth-child(2) {
+                order: 3;
+            }
+            
+            .footbox :nth-child(3) {
+                order: 2;
+            }
+            
+            .footbox ul {
+                list-style: none;
+                display: flex;
+            }
+            
+            .footbox a {
+                text-decoration: none;
+                color: #00CED1;
+                font-size: 60px;
+                padding: 40px;
+            }
+
+        }
+
+
+    
+
+@media screen and (min-width: 1439px) {
+   .bord {
+    border-left: 20px solid #0D52BD;
+    
+    }
+   
     header {
         width: 100%;
     }
     
     .headcontainer {
-        width: 100%;
+        /* makes the div within the head's children display flex */
+        display: flex;
+        justify-content: space-between;
+        /* makes all children align evenly in the center of cross axis */
+        align-items: center;
+        padding: 15px 10px;
     }
 
+    .headcontainer h1 {
+        font-size: 28px;
+    }
+    
+    .headnav ul {
+        list-style: none;
+         display: flex; 
+         
+        }
+    
+        .headnav a {
+        text-decoration: none;
+        color: var(--turtclr);
+        font-size: 28px;
+        /* sets padding of the individual list items */
+        padding: 10px;
+        
+        }
+
     .aboutbox {
-        width: 100%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-self: center;
-        
+        margin-left: 200px;
     }
 
     .headshot {
@@ -247,11 +436,16 @@ html{
         top: 0%;
     }
 
+    .Workdisc {
+        font-size: 28px;
+    }
+
     .project a {
         display: flex;
         flex-direction: row;
         text-align: center;
         padding-left: 31.5px;
+    
     }
 
     .project button {
@@ -260,7 +454,7 @@ html{
         width: 622px;
         height: 210px;
         color: #333333;
-        font-size: 16px;
+        font-size: 28px;
         
         
     }
@@ -278,6 +472,61 @@ html{
         margin-right: 2 0px; */
         box-shadow: 10px 0px 10px 0px #003152;
         
+    }
+
+    .projabout {
+        padding-top: 0px;
+    }
+
+    .projabout h1 {
+        font-size: 28px;
+    }
+
+    .projabout a {
+        font-size: 22px;
+    }
+
+   .rsrcs {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 75%;
+    margin-left: 180px;
+    margin-top: 25px;
+   }
+   
+    .rsrcs p {
+        font-size: 24px;
+
+    }
+
+    .footbox {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px 10px;
+    }
+    
+    .footbox ul {
+        list-style: none;
+        display: flex;
+    
+    }
+    
+    .footbox a {
+        text-decoration: none;
+        color: #00CED1;
+        font-size: 28px;
+        padding: 10px;
+    }
+
+      /* Linkedin Looked weird in the middle with scaling used this to reorder email and linkedin */
+      .footbox :nth-child(2) {
+        order: 3;
+    }
+    
+    .footbox :nth-child(3) {
+        order: 2;
     }
 
 
