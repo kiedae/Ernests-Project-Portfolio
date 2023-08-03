@@ -11,6 +11,12 @@
     --turtclr: #00CED1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 /* creates a left boarder throughout the div bord */
 .bord {
     border-left: 10px solid #0D52BD;
@@ -94,7 +100,7 @@
 }
 
 .extraspace {
-    height: 450px;
+    height: 250px;
 }
 
 .Workdisc {
@@ -123,6 +129,12 @@
     /* margin-right: auto;
     margin-left: auto; */
 }
+
+#project1 button {
+    background-image: url(./background1.avif);
+}
+
+
 
 .project a {
     display: flex;
@@ -165,8 +177,21 @@
     text-align: center;
 }
 
+   .rsrcs {
+    margin: 100px;
+    border: 4px solid black;
+    background-color: #333333;
+    color: #0D52BD;
+   }
 
+   .rsrcs ul {
+    list-style: none;
+   }
 
+   .rsrcs a {
+    text-decoration: none;
+    color: #00CED1;
+   }
 
 
 
